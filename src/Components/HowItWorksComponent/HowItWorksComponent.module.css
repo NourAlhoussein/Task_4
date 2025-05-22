@@ -1,0 +1,60 @@
+.card {
+  padding: 30px 20px;
+  height: 255px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 20px;
+  transition: 0.2s ease-out;
+  width: 100%;
+}
+.cardTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+}
+.cardDescription {
+  font-size: 14px;
+  font-weight: 400;
+  color: #22222280;
+}
+.iconDiv {
+  position: relative;
+}
+.homeIcon {
+  width: 40px;
+  font-size: 40px;
+  color: #025595;
+  position: relative;
+}
+.itemIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #025595;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.activrCard {
+  background-color: #025595;
+  border-radius: 15px;
+}
+.activrCard .cardTitle {
+  color: white;
+}
+.activrCard .cardDescription {
+  color: white;
+}
+.activrCard .homeIcon {
+  color: white;
+}
+.activrCard .itemIcon {
+  color: white;
+}
+@media screen and (max-width: 900px) {
+}

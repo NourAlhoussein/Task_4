@@ -1,0 +1,212 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #eff8ff;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.logoStyle{
+  cursor: pointer;
+}
+.largPending {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+.largPending::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 26px;
+  left: 0px;
+  border-radius: 8px;
+  background-color: #025595;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+.largPending:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+.largActive {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+.largActive::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 26px;
+  left: 0px;
+  border-radius: 8px;
+  background-color: #025595;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #025595;
+  border-radius: 6px;
+  border: none;
+  height: 38px;
+  width: 135px;
+  cursor: pointer;
+}
+.login:focus-visible {
+  outline: none;
+}
+.menuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #025595;
+  font-size: 30px;
+  right: 20px;
+  position: absolute;
+}
+.loginSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #025595;
+  border-radius: 6px;
+  border: none;
+  height: 38px;
+  width: 175px;
+}
+.pending {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+  color: #222222;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.active {
+  border-radius: 2px;
+  background-color: #d7e6ea;
+  width: 100%;
+  font-size: 24px;
+  color: #222222;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .menuIcon,
+  .smallNav {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .loginDiv {
+    display: none;
+  }
+  .logoStyle {
+    width: 60px;
+  }
+  .items {
+    display: none;
+  }
+  .smallNav{
+    position: absolute;
+    z-index: 10;
+  }
+  .smallItemsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 75px auto 10px auto;
+  }
+  .menuOpen {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(0);
+    transition: 0.3s ease-in;
+  }
+  .menuClose {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in;
+  }
+  .headerSmallNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    color: #025595;
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+  .loginSmallDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+}
+.title {
+  font-size: 39px;
+  font-weight: 700;
+  text-align: left !important;
+}
+.description {
+  font-size: 15px;
+  font-weight: 400;
+  color: #22222280;
+  margin-top: 5px;
+  text-align: left !important;
+}
+@media screen and(max-width:900px) {
+  .title{
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,125 @@
+.hero {
+  background-color: #eff8ff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 122px 0px 0px 70px;
+}
+.contentDiv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  position: absolute;
+  z-index: 1;
+}
+.imgDiv {
+  position: absolute;
+  right: -200px;
+  bottom: -290px;
+  z-index: 0;
+}
+.imgDiv img {
+  height: 700px;
+}
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #222222;
+  width: 600px;
+}
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #22222280;
+  width: 420px;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  background-color: #ffffffcc;
+  padding: 20px 58px;
+  width: 860px;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.itemDiv2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #f0f6fa;
+  color: #528bb7;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.itemType {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+}
+.itemContent {
+  font-size: 16px;
+  font-weight: 400;
+  color: #22222280;
+}
+@media screen and (min-width: 1920px) {
+  .imgDiv img {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    height: 150vh;
+    padding: 0px;
+  }
+  .contentDiv {
+    width: 100%;
+    row-gap: 20px;
+    margin-top: -42px;
+  }
+  .items {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px;
+    padding: 20px;
+    row-gap: 24px;
+  }
+  .item {
+    column-gap: 31px;
+  }
+  .title {
+    width: 100%;
+    font-size: 35px;
+    padding: 0px 20px 0px 20px;
+  }
+  .description {
+    width: 100%;
+    font-size: 14px;
+    padding: 0px 20px 0px 20px;
+  }
+  .imgDiv {
+    top: 55%;
+    right: -350px;
+  }
+}
