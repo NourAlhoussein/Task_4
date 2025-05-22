@@ -90,14 +90,14 @@
 
 @media screen and (max-width: 900px) {
   .hero {
-    height: 115vh;
+    min-height: 740px;
     padding: 0px;
-    margin-top: 60px;
+    justify-content: start;
   }
   .contentDiv {
     width: 100%;
     row-gap: 20px;
-    margin-top: -42px;
+    margin-top: 132px;
   }
   .items {
     flex-direction: column;
