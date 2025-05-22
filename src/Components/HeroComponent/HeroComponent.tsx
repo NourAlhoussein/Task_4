@@ -26,7 +26,7 @@ function HeroComponent() {
         </div>
       </div>
       <div className={styles.imgDiv}>
-        <img src="/images/hero.png" alt="" />
+        <img src="/Task_4/images/hero.png" alt="" />
       </div>
     </div>
   );

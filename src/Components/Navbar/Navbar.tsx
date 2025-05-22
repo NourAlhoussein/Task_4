@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div>
-        <img className={styles.logoStyle} src="/images/logo.png" alt="logo" />
+        <img className={styles.logoStyle} src="/Task_4/images/logo.png" alt="logo" />
       </div>
       <div className={styles.items}>
         {items?.map((item, index) => {
@@ -45,7 +45,7 @@ function Navbar() {
         }`}
       >
         <div className={styles.headerSmallNav}>
-          <img src="/images/logo.png" width="60px" alt="logo" />
+          <img src="/Task_4/images/logo.png" width="60px" alt="logo" />
           <IoMdClose onClick={openSmallMenu} />
         </div>
         <div className={styles.smallItemsDiv}>

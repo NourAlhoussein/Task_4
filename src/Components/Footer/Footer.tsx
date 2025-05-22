@@ -7,7 +7,7 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerDiv1}>
         <div className={styles.div1}>
-          <img className={styles.logo} src="/images/logo.png" alt="" />
+          <img className={styles.logo} src="/Task_4/images/logo.png" alt="" />
           <div className={styles.description}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet
             tempus felis vitae sit est quisque.
