@@ -90,8 +90,9 @@
 
 @media screen and (max-width: 900px) {
   .hero {
-    height: 150vh;
+    height: 115vh;
     padding: 0px;
+    margin-top: 60px;
   }
   .contentDiv {
     width: 100%;

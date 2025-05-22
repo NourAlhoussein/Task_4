@@ -13,7 +13,7 @@
   padding-left: 70px;
   padding-right: 70px;
 }
-.logoStyle{
+.logoStyle {
   cursor: pointer;
 }
 .largPending {
@@ -139,7 +139,7 @@
   .items {
     display: none;
   }
-  .smallNav{
+  .smallNav {
     position: absolute;
     z-index: 10;
   }
@@ -148,7 +148,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin: 75px auto 10px auto;
+    margin: 50px auto 0px auto;
   }
   .menuOpen {
     display: flex;
@@ -208,5 +208,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 16px;
   }
 }
